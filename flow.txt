@@ -1,0 +1,18 @@
+
+                                                                Horizontal Scaling 
+
+
+
+                                                                            Client 
+                                                                            |
+                                                                            |
+                                                                ________________________________________
+                                                                |                                        |
+                                                                |                                        |
+                                                                |                                        |
+                                                            Load Balancer _______                           |
+                                                                                |                           |
+                                                                    |         Server 2                      |   
+                                                                    |                                       |
+                                                                SERVER 1                                    |
+                                                                                                        DNS Server
