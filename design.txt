@@ -1,0 +1,32 @@
+Approach 1 Round Robin
+
+Advantages 
+1. All the request are distributed equally between the servers
+
+Disadvantage
+
+1. Server 2 is down --> 
+Every  request to that particular server will fail 
+
+To solve this --> Health Check 
+
+Approach 2: Round Robin with health check info stored in the load balancer
+
+Only send request to alive servers 
+
+Disadvantage
+1. Server is taking some time to complete the request
+
+To solve --> Add response time in the load balancer
+
+------------------------------------------------------------------
+
+NOTE: All of there works for stateless services.
+
+Diffrence between Stateless and Statefull Services. 
+
+STATELESS -> The response to a request will be the same irrespective of the machine you send the request to. 
+
+STATEFULL -> The response to a request will be diffrent when you send the same request to a diffrent machine
+
+
