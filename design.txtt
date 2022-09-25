@@ -1,0 +1,20 @@
+Approach 1 Round Robin
+
+Advantages 
+1. All the request are distributed equally between the servers
+
+Disadvantage
+
+1. Server 2 is down --> 
+Every  request to that particular server will fail 
+
+To solve this --> Health Check 
+
+Approach 2: Round Robin with health check info stored in the load balancer
+
+Only send request to alive servers 
+
+Disadvantage
+1. Server is taking some time to complete the request
+
+To solve --> Add response time in the load balancer
